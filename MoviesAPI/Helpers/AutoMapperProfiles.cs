@@ -8,6 +8,8 @@ namespace MoviesAPI.Helpers
     {
         public AutoMapperProfiles()
         {
+            CreateMap<ActorDTO,Actor>().ReverseMap();
+            CreateMap<ActorCreationDTO,Actor>().ReverseMap();
             CreateMap<Genre,GenreDTO>().ReverseMap();
             CreateMap<GenreCreationDTO,Genre>();
         }
